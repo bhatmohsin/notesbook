@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotesBook - Previous Exam Papers</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <!--===== Font Awesome =====-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--===== Main CSS =====-->
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        #myInput {
+            width: 100%;
+            font-size: 16px;
+            padding: 12px 20px 12px 40px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+        }
+
+        #myTable {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #ddd;
+            font-size: 18px;
+        }
+
+        #myTable th, #myTable td {
+            text-align: left;
+            padding: 12px;
+        }
+
+        #myTable tr {
+            border-bottom: 1px solid #ddd;
+        }
+
+        #myTable tr.header, #myTable tr:hover {
+            background-color: #f1f1f1;
+        }
+        /* New styles for buttons */
+        .btn-container {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 10px;
+        }
+
+        .btn-1 {
+            display: inline-block;
+            padding: 7px 10px;
+            font-size: 14px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 6px;
+            margin-top: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-1:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <!--===== Navbar Start =====-->
+    <nav class="navbar">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="logo"><a href="/index.html">Notes<span>Book</span></a></div>
+                <div class="links">
+                    <ul class="menu">
+                        <li class="nav-item"><a href="/index.html" class="nav-link">Home <span></span></a></li>
+                        <li class="nav-item"><a href="/pages/old_exam_papers.html" class="nav-link active"> Old Exam Papers</a>
+                                <span></span></a></li>
+                        <li class="nav-item"><a href="http://www.cusrinagar.edu.in/" target="_blank"
+                                class="nav-link">Official CU Website <span></span></a></li>
+                        <li class="nav-item"><a href="contribute.html" class="nav-link">Contribute<span></span></a></li>
+                        <li class="nav-item"><a href="http://bhatmohsin.netlify.app" class="nav-link">Contact <span></span></a></li>
+                    </ul>
+                </div>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--===== Navbar End =====-->
+
+    <!--===== Old Exam Papers Section Start =====-->
+    <section class="old-exam-papers-section section-padding" id="old-exam-papers">
+        <div class="container">
+            <div class="row">
+                <div class="section-title text-align">
+                    <h5 class="sub-title">Old Exam Papers</h5>
+                    <h3 class="main-title">Search and Download</h3>
+                    <h6 >❌ = means Not available yet..</h6>
+                    <ul class="line">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for subjects...">
+
+                <table id="myTable">
+                    <tr class="header">
+                        <th style="width:60%;">Subject</th>
+                        <th style="width:40%;">Download</th>
+                    </tr>
+                    <tr>
+                        <td>Biochemistry(1st-sem)❌</td>
+                        <td>
+                            <a href="#" class="btn btn-1">2024</a>
+                            <a href="#" class="btn btn-1">2023</a>
+                        </td>
+                    </tr>
+                                                          <tr>
+                        <td>Biochemistry(2nd-sem)❌</td>
+                        <td>
+                            <a href="#" class="btn btn-1">2024</a>
+                            <a href="#" class="btn btn-1">2023</a>
+                        </td>
+                                        </tr>
+                    <tr>
+                        <td>Zoology❌</td>
+                        <td>
+                            <a href="#" class="btn btn-1">2024</a>
+                            <a href="#" class="btn btn-1">2023</a>
+                            <a href="#" class="btn btn-1">2022</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Chemistry(2nd-sem)</td>
+                        <td>
+                            <a href="#" class="btn btn-1">2024</a>
+                            <a href="#" class="btn btn-1">2023</a>
+                            <a href="#" class="btn btn-1">2022</a>
+                        </td>
+                    </tr>
+                                        <tr>
+                        <td>chemistry(2nd-sem)❌</td>
+                        <td>
+                            <a href="#" class="btn btn-1">2024</a>
+                            <a href="#" class="btn btn-1">2023</a>
+                        </td>
+                                        </tr>
+                    <tr>
+                        <td>Physics</td>
+                        <td>
+                            <a href="#" class="btn btn-1">2024</a>
+                            <a href="#" class="btn btn-1">2023</a>
+                            <a href="#" class="btn btn-1">2022</a>
+                        </td>
+                    </tr>
+                    <tr>
+    <td>Math❌</td>
+    <td>
+        <a href="#" class="btn btn-1">2024</a>
+        <a href="#" class="btn btn-1">2023</a>
+        <a href="#" class="btn btn-1">2022</a>
+    </td>
+</tr>
+<tr>
+    <td>Botany</td>
+    <td>
+        <a href="#" class="btn btn-1">2024</a>
+        <a href="#" class="btn btn-1">2023</a>
+        <a href="#" class="btn btn-1">2022</a>
+    </td>
+</tr>
+<tr>
+    <td>Biotechnology(1st-sem)❌</td>
+    <td>
+        <a href="#" class="btn btn-1">2024</a>
+        <a href="#" class="btn btn-1">2023</a>
+        <a href="#" class="btn btn-1">2022</a>
+    </td>
+</tr>
+<tr>
+                        <td>Biotechnology(2nd-sem)❌</td>
+                        <td>
+                            <a href="#" class="btn btn-1">2024</a>
+                            <a href="#" class="btn btn-1">2023</a>
+                        </td>
+                    </tr>
+<tr>
+    <td>Bioinformatics(ist-sem)</td>
+    <td>
+        <a href="#" class="btn btn-1">2024</a>
+        <a href="#" class="btn btn-1">2023</a>
+        <a href="#" class="btn btn-1">2022</a>
+    </td>
+</tr>
+                    <tr>
+                        <td>Bioinformatics(2nd-sem)❌</td>
+                        <td>
+                            <a href="#" class="btn btn-1">2024</a>
+                            <a href="#" class="btn btn-1">2023</a>
+                        </td>
+                    </tr>
+<tr>
+    <td>Clinical Biochemistry</td>
+    <td>
+        <a href="#" class="btn btn-1">2024</a>
+        <a href="#" class="btn btn-1">2023</a>
+        <a href="#" class="btn btn-1">2022</a>
+    </td>
+</tr>
+<tr>
+    <td>History❌</td>
+    <td>
+        <a href="#" class="btn btn-1">2024</a>
+        <a href="#" class="btn btn-1">2023</a>
+        <a href="#" class="btn btn-1">2022</a>
+    </td>
+</tr>
+<tr>
+    <td>History MD</td>
+    <td>
+        <a href="#" class="btn btn-1">2024</a>
+        <a href="#" class="btn btn-1">2023</a>
+        <a href="https://drive.google.com/file/d/1cVSBxVYYly0zyNRf-estaZHVIbWR99us/view?usp=drivesdk" class="btn btn-1">2022</a>
+    </td>
+</tr>
+<tr>
+    <td>Understanding India</td>
+    <td>
+        <a href="#" class="btn btn-1">2024</a>
+        <a href="#" class="btn btn-1">2023</a>
+        <a href="https://drive.google.com/file/d/1ckOa4dnSD-xisRFBbRW5QzwuSbZijnPh/view?usp=drivesdk" class="btn btn-1">2022</a>
+    </td>
+</tr>
+<tr>
+    <td>Essentials of Communication</td>
+    <td>
+        <a href="#" class="btn btn-1">2024</a>
+        <a href="#" class="btn btn-1">2023</a>
+        <a href="https://drive.google.com/file/d/1dbMWMKE_zRMaj9S2kcbC_5o9dbfF-_rW/view?usp=drivesdk" class="btn btn-1">2022</a>
+    </td>
+</tr>
+<tr>
+    <td>English Language</td>
+    <td>
+        <a href="https://drive.google.com/file/d/1ckOa4dnSD-xisRFBbRW5QzwuSbZijnPh/view?usp=drivesdk" class="btn btn-1">2024</a>
+        <a href="#" class="btn btn-1">2023</a>
+        <a href="https://drive.google.com/file/d/1ckOa4dnSD-xisRFBbRW5QzwuSbZijnPh/view?usp=drivesdk" class="btn btn-1">2022</a>
+    </td>
+</tr>
+<tr>
+    <td>Communication Skills</td>
+    <td>
+        <a href="#" class="btn btn-1">2024</a>
+        <a href="#" class="btn btn-1">2023</a>
+        <a href="https://drive.google.com/file/d/1cUs1Jy_R9UgDDOLwK04l9-RSxdfJlYWi/view?usp=drivesdk" class="btn btn-1">2022</a>
+    </td>
+</tr>
+<tr>
+    <td>Health and Wellness</td>
+    <td>
+        <a href="#" class="btn btn-1">2024</a>
+        <a href="https://drive.google.com/file/d/1ckOa4dnSD-xisRFBbRW5QzwuSbZijnPh/view?usp=drivesdk" class="btn btn-1">2023</a>
+        <a href="https://drive.google.com/file/d/1ccLrnv68fgC9WQIetV8KgWN7KAj_LEOc/view?usp=drivesdk class="btn btn-1">2022</a>
+    </td>
+</tr>
+<tr>
+    <td>Physical Education</td>
+    <td>
+        <a href="#" class="btn btn-1">2024</a>
+        <a href="https://drive.google.com/file/d/1cZG5FPRgYRTsqU8LwLkWqgvIA1Y-8Oul/view?usp=drivesdk" class="btn btn-1">2023</a>
+        <a href="#" class="btn btn-1">2022</a>
+    </td>
+</tr>
+<tr>
+    <td>Genetics❌</td>
+    <td>
+        <a href="#" class="btn btn-1">2024</a>
+        <a href="#" class="btn btn-1">2023</a>
+        <a href="#" class="btn btn-1">2022</a>
+    </td>
+</tr>
+<tr>
+    <td>EVS (VAC)</td>
+    <td>
+        <a href="#" class="btn btn-1">2024</a>
+        <a href="https://drive.google.com/file/d/1ckOa4dnSD-xisRFBbRW5QzwuSbZijnPh/view?usp=drivesdk" class="btn btn-1">2023</a>
+        <a href="#" class="btn btn-1">2022</a>
+    </td>
+</tr>
+<tr>
+    <td>DTS (VAC)</td>
+    <td>
+        <a href="https://drive.google.com/file/d/1cUs1Jy_R9UgDDOLwK04l9-RSxdfJlYWi/view?usp=drivesdk" class="btn btn-1">2024</a>
+        <a href="#" class="btn btn-1">2023</a>
+        <a href="#" class="btn btn-1">2022</a>
+    </td>
+</tr>
+<tr>
+    <td>Library Science</td>
+    <td>
+        <a href="https://drive.google.com/file/d/1dOf7p3ldEL8nD8bTJkL6c1iz2MRUUsA-/view?usp=drivesdk" class="btn btn-1">2024</a>
+        <a href="https://drive.google.com/file/d/1cbKi289Zqsa0PPehA3BVt-r4pqhn1EJr/view?usp=drivesdk" class="btn btn-1">2023</a>
+        <a href="https://drive.google.com/file/d/1cbKi289Zqsa0PPehA3BVt-r4pqhn1EJr/view?usp=drivesdk" class="btn btn-1">2024</a>
+        <a href="#" class="btn btn-1">2022(2nd)</a>
+        <a href="https://drive.google.com/file/d/1cVSBxVYYly0zyNRf-estaZHVIbWR99us/view?usp=drivesdk" class="btn btn-1">2022(ist)</a>
+    </td>
+</tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!--===== Old Exam Papers Section End =====-->
+
+    <!--===== Footer Section Start =====-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <p class="copyright-text">&copy; 2024 NotesBook| Made by <a href="https://bhatmohsin.netlify.app">Bhat Mohsin </a></p>
+            </div>
+        </div>
+    </footer>
+    <!--===== Footer Section End =====-->
+    <script src="/js/main.js"></script>
+    <script>
+        function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
