@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/css/sitemap-style.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cusnotes.netlify.app/</loc>
@@ -8,57 +7,51 @@
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://cusnotes.netlify.app/pages/old_exam_papers</loc>
+    <loc>https://cusnotes.netlify.app/pages/old-exam-papers</loc>
     <lastmod>2024-08-16T20:40:57+00:00</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://cusnotes.netlify.app/pages/contribute</loc>
     <lastmod>2024-08-16T20:40:57+00:00</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://cusnotes.netlify.app/pages/semester_1</loc>
+    <loc>https://cusnotes.netlify.app/pages/semester-1</loc>
     <lastmod>2024-08-16T20:40:57+00:00</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://cusnotes.netlify.app/pages/semester_2</loc>
+    <loc>https://cusnotes.netlify.app/pages/semester-2</loc>
     <lastmod>2024-08-16T20:40:57+00:00</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://cusnotes.netlify.app/pages/semester_3</loc>
+    <loc>https://cusnotes.netlify.app/pages/semester-3</loc>
     <lastmod>2024-08-16T20:40:57+00:00</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://cusnotes.netlify.app/pages/semester_4</loc>
+    <loc>https://cusnotes.netlify.app/pages/semester-4</loc>
     <lastmod>2024-08-16T20:40:57+00:00</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://cusnotes.netlify.app/pages/semester_5</loc>
+    <loc>https://cusnotes.netlify.app/pages/semester-5</loc>
     <lastmod>2024-08-16T20:40:57+00:00</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://cusnotes.netlify.app/pages/semester_6</loc>
+    <loc>https://cusnotes.netlify.app/pages/semester-6</loc>
     <lastmod>2024-08-16T20:40:57+00:00</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://cusnotes.netlify.app/pages/not_found</loc>
-    <lastmod>2024-08-16T20:40:57+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.64</priority>
   </url>
 </urlset>
