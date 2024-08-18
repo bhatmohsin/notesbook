@@ -4,10 +4,10 @@
 # CUS Notes(NotesBook)
 
 [![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/navendu-pottekkat/awesome-readme?include_prereleases)](https://img.shields.io/github/v/release/navendu-pottekkat/awesome-readme?include_prereleases)
-[![GitHub last commit](https://img.shields.io/github/last-commit/navendu-pottekkat/awesome-readme)](https://img.shields.io/github/last-commit/navendu-pottekkat/awesome-readme)
-[![GitHub issues](https://img.shields.io/github/issues-raw/navendu-pottekkat/awesome-readme)](https://img.shields.io/github/issues-raw/navendu-pottekkat/awesome-readme)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/navendu-pottekkat/awesome-readme)](https://img.shields.io/github/issues-pr/navendu-pottekkat/awesome-readme)
-[![GitHub](https://img.shields.io/github/license/navendu-pottekkat/awesome-readme)](https://img.shields.io/github/license/navendu-pottekkat/awesome-readme)
+[![GitHub last commit](https://img.shields.io/github/last-commit/navendu-pottekkat/awesome-readme)](https://img.shields.io/github/last-commit/bhatmohsin/notesbook)
+[![GitHub issues](https://img.shields.io/github/issues-raw/navendu-pottekkat/awesome-readme)](https://img.shields.io/github/issues-raw/bhatmohsin/notesbook)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/navendu-pottekkat/awesome-readme)](https://img.shields.io/github/issues-pr/bhatmohsin/notesbook)
+[![GitHub](https://img.shields.io/github/license/bhatmohsin/notesbook)](https://img.shields.io/github/license/bhatmohsin/notesbook)
 
 Notesbook is a user-friendly open source platform created for students to easily download and share notes related to the colleges which come under cluster university srinagar or colleges following NEP 2020. Built using HTML, CSS, and JavaScript, this platform allows you to find and contribute valuable study materials, making education more accessible to everyone.
 <!-- Add badges with link to Shields IO -->
