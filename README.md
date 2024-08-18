@@ -3,11 +3,11 @@
 
 # CUS Notes(NotesBook)
 
-[![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/thebhatmohsin/notesbook?include_prereleases)](https://img.shields.io/github/v/release/thebhatmohsin/notesbook?include_prereleases)
-[![GitHub last commit](https://img.shields.io/github/last-commit/thebhatmohsin/notesbook)](https://img.shields.io/github/last-commit/thebhatmohsin/notesbook)
-[![GitHub issues](https://img.shields.io/github/issues-raw/thebhatmohsin/notesbook)](https://img.shields.io/github/issues-raw/thebhatmohsin/notesbook)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/thebhatmohsin/notesbook)](https://img.shields.io/github/issues-pr/thebhatmohsin/notesbook)
-[![GitHub](https://img.shields.io/github/license/thebhatmohsin/notesbook)](https://img.shields.io/github/license/thebhatmohsin/notesbook)
+[![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/bhatmohsin/notesbook?include_prereleases)](https://img.shields.io/github/v/release/bhatmohsin/notesbook?include_prereleases)
+[![GitHub last commit](https://img.shields.io/github/last-commit/bhatmohsin/notesbook)](https://img.shields.io/github/last-commit/bhatmohsin/notesbook)
+[![GitHub issues](https://img.shields.io/github/issues-raw/bhatmohsin/notesbook)](https://img.shields.io/github/issues-raw/bhatmohsin/notesbook)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/bhatmohsin/notesbook)](https://img.shields.io/github/issues-pr/bhatmohsin/notesbook)
+[![GitHub](https://img.shields.io/github/license/bhatmohsin/notesbook)](https://img.shields.io/github/license/bhatmohsin/notesbook)
 
 Notesbook is a user-friendly open source platform created for students to easily download and share notes related to the colleges which come under cluster university srinagar or colleges following NEP 2020. Built using HTML, CSS, and JavaScript, this platform allows you to find and contribute valuable study materials, making education more accessible to everyone.
 <!-- Add badges with link to Shields IO -->
