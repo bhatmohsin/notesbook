@@ -1,5 +1,5 @@
 
-![Awesome ReadME](https://github.com/bhatmohsin/images/favicon.ico)
+![Awesome ReadME](https://cusnotes.netlify.app/images/favicon.ico)
 
 # CUS Notes(NotesBook)
 
