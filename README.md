@@ -12,16 +12,16 @@
 Notesbook is a user-friendly open source platform created for students to easily download and share notes related to the colleges which come under cluster university srinagar or colleges following NEP 2020. Built using HTML, CSS, and JavaScript, this platform allows you to find and contribute valuable study materials, making education more accessible to everyone.
 <!-- Add badges with link to Shields IO -->
 
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/navendu-pottekkat/awesome-readme?include_prereleases)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/bhatmohsin/notesbook?include_prereleases)
 : Shows the current release version.
 
-![GitHub last commit](https://img.shields.io/github/last-commit/navendu-pottekkat/awesome-readme)
+![GitHub last commit](https://img.shields.io/github/last-commit/bhatmohsin/notesbook)
 : Shows the last commit time. Good indication of the project activity.
 
-![GitHub issues](https://img.shields.io/github/issues-raw/navendu-pottekkat/awesome-readme)
+![GitHub issues](https://img.shields.io/github/issues-raw/bhatmohsin/notesbook)
 : Dynamic badge that shows the number of open issues in the project.
 
-![GitHub pull requests](https://img.shields.io/github/issues-pr/navendu-pottekkat/awesome-readme)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/bhatmohsin/notesbook)
 : Similar dynamic badge, but for pull requests.
 
 ![GitHub](https://img.shields.io/github/license/navendu-pottekkat/awesome-readme)
@@ -29,7 +29,7 @@ Notesbook is a user-friendly open source platform created for students to easily
 
 # Quick Start Demo
 
-![Demo Preview](https://picsum.photos/1920/1080)
+![Demo Preview](https://cusnotes.netlify.app/images/favicon.ico)
 
 Notesbook is designed to be straightforward and easy to use. Whether you're looking for notes or want to share your own, our platform is here to help. Check out the demo below to see how it works!
 
