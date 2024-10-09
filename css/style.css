@@ -472,16 +472,43 @@ img {
   margin: 0;
 }
 
-/*footer*/
+/* footer */
 footer {
   background-color: var(--main-color);
+  padding: 20px 0;
+  text-align: center;
 }
-footer .copyright-text {
-  padding: 10px 0;
-  font-size: 18px;
+
+footer .footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .footer-links li {
+  display: inline;
+}
+
+footer .footer-links a {
   color: var(--black-100);
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+footer .footer-links a:hover {
+  color: var(--highlight-color); /* Replace with your highlight color */
+}
+
+footer .copyright-text {
+  font-size: 14px;
+  color: var(--black-100);
+  margin: 0;
   font-weight: 300;
-  margin: 10px 0 0;
 }
 /*Responsive*/
 @media (min-width: 1300px) and (max-width: 1399px) {
