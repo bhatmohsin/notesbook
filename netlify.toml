@@ -1,0 +1,5 @@
+[build]
+  publish = "."
+
+[context.production]
+  environment = { NODE_VERSION = "14" }
