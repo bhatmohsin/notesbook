@@ -20,7 +20,7 @@
     <!--===== Google Fonts =====-->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Kaushan+Script&display=swap" rel="stylesheet">
     <!--===== Main CSS =====-->
-    <link rel="stylesheet" href="/css/contribute.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
@@ -106,225 +106,224 @@
         </div>
     </footer>
 
-   <script>
-    // Fetching environment variables from Netlify
-    const CLIENT_ID = process.env.GOOGLE_CLIENT_ID;
-    const API_KEY = process.env.GOOGLE_API_KEY;
+    <script>
+        const CLIENT_ID = import.meta.env.VITE_CLIENT_ID;
+    const API_KEY = import.meta.env.VITE_API_KEY;
     const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/drive/v3/rest"];
     const SCOPES = 'https://www.googleapis.com/auth/drive.file';
 
-    let tokenClient;
-    let gapiInited = false;
-    let gisInited = false;
-    let folderIds;
+        let tokenClient;
+        let gapiInited = false;
+        let gisInited = false;
+        let folderIds;
 
-    function gapiLoaded() {
-        gapi.load('client', initializeGapiClient);
-    }
-
-    async function initializeGapiClient() {
-        await gapi.client.init({
-            apiKey: API_KEY,
-            discoveryDocs: DISCOVERY_DOCS,
-        });
-        gapiInited = true;
-        maybeEnableButtons();
-    }
-
-    function gisLoaded() {
-        tokenClient = google.accounts.oauth2.initTokenClient({
-            client_id: CLIENT_ID,
-            scope: SCOPES,
-            callback: '', // defined later
-        });
-        gisInited = true;
-        maybeEnableButtons();
-    }
-
-    function maybeEnableButtons() {
-        if (gapiInited && gisInited) {
-            document.getElementById('signInButton').style.display = 'block';
-            loadFolderIds();
+        function gapiLoaded() {
+            gapi.load('client', initializeGapiClient);
         }
-    }
 
-    async function loadFolderIds() {
-        try {
-            const response = await fetch('subjectids.json');
-            folderIds = await response.json();
-            updateSubjectOptions();
-        } catch (error) {
-            console.error('Error loading folder IDs:', error);
+        async function initializeGapiClient() {
+            await gapi.client.init({
+                apiKey: API_KEY,
+                discoveryDocs: DISCOVERY_DOCS,
+            });
+            gapiInited = true;
+            maybeEnableButtons();
         }
-    }
 
-    function updateSubjectOptions() {
-        const subjectSelect = document.getElementById('uploadSubject');
-        subjectSelect.innerHTML = '<option value="">Select Subject</option>';
-        for (const subject in folderIds) {
-            if (subject !== 'root') {
-                const option = document.createElement('option');
-                option.value = subject;
-                option.textContent = subject;
-                subjectSelect.appendChild(option);
+        function gisLoaded() {
+            tokenClient = google.accounts.oauth2.initTokenClient({
+                client_id: CLIENT_ID,
+                scope: SCOPES,
+                callback: '', // defined later
+            });
+            gisInited = true;
+            maybeEnableButtons();
+        }
+
+        function maybeEnableButtons() {
+            if (gapiInited && gisInited) {
+                document.getElementById('signInButton').style.display = 'block';
+                loadFolderIds();
             }
         }
-    }
 
-    function handleAuthClick() {
-        tokenClient.callback = async (resp) => {
-            if (resp.error !== undefined) {
-                throw (resp);
+        async function loadFolderIds() {
+            try {
+                const response = await fetch('subjectids.json');
+                folderIds = await response.json();
+                updateSubjectOptions();
+            } catch (error) {
+                console.error('Error loading folder IDs:', error);
             }
-            document.getElementById('signInSection').style.display = 'none';
-            document.getElementById('content').style.display = 'block';
-        };
-
-        if (gapi.client.getToken() === null) {
-            tokenClient.requestAccessToken({prompt: 'consent'});
-        } else {
-            tokenClient.requestAccessToken({prompt: ''});
         }
-    }
 
-    function updateSemesterOptions() {
-        const subject = document.getElementById('uploadSubject').value;
-        const semesterSelect = document.getElementById('uploadSemester');
-        semesterSelect.innerHTML = '<option value="">Select Semester</option>';
-
-        if (subject && folderIds[subject]) {
-            for (const semester in folderIds[subject]) {
-                if (semester !== 'id') {
+        function updateSubjectOptions() {
+            const subjectSelect = document.getElementById('uploadSubject');
+            subjectSelect.innerHTML = '<option value="">Select Subject</option>';
+            for (const subject in folderIds) {
+                if (subject !== 'root') {
                     const option = document.createElement('option');
-                    option.value = semester;
-                    option.textContent = semester;
-                    semesterSelect.appendChild(option);
+                    option.value = subject;
+                    option.textContent = subject;
+                    subjectSelect.appendChild(option);
                 }
             }
         }
-    }
 
-    function getFolderId(subject, semester) {
-        return folderIds[subject] && folderIds[subject][semester] ? folderIds[subject][semester] : null;
-    }
+        function handleAuthClick() {
+            tokenClient.callback = async (resp) => {
+                if (resp.error !== undefined) {
+                    throw (resp);
+                }
+                document.getElementById('signInSection').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+            };
 
-    async function uploadFile() {
-        const subject = document.getElementById('uploadSubject').value;
-        const semester = document.getElementById('uploadSemester').value;
-        const fileInput = document.getElementById('fileInput');
-        
-        if (!subject || !semester || !fileInput.files[0]) {
-            showPopup('Please select a subject, semester, and choose a file');
-            return;
-        }
-
-        const file = fileInput.files[0];
-        const allowedTypes = ['application/pdf', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-powerpoint', 'application/vnd.openxmlformats-officedocument.presentationml.presentation'];
-
-        if (!allowedTypes.includes(file.type)) {
-            showPopup('Please upload only PDF, DOCX, or PPT files!');
-            return;
-        }
-
-        const folderId = getFolderId(subject, semester);
-
-        if (!folderId) {
-            showPopup('The selected subject and semester combination is not valid.');
-            return;
-        }
-
-        const uploadButton = document.getElementById('uploadButton');
-        const progressBarContainer = document.getElementById('progressBarContainer');
-        const progressBar = document.getElementById('progressBar');
-        const progressPercentage = document.getElementById('progressPercentage');
-
-        uploadButton.disabled = true;
-        progressBarContainer.style.display = 'block';
-        progressBar.style.width = '0%';
-        progressPercentage.textContent = '0%';
-
-        try {
-            const uploadedFile = await uploadToFolder(file, folderId, (progress) => {
-                const percentage = Math.round(progress);
-                progressBar.style.width = `${percentage}%`;
-                progressPercentage.textContent = `${percentage}%`;
-            });
-            showPopup(`File "${uploadedFile.name}" uploaded successfully to ${subject} - ${semester}. Thank you for contributing to NotesBook!`);
-        } catch (error) {
-            console.error('Error uploading file', error);
-            showPopup('An error occurred while uploading the file. Please try again.');
-        } finally {
-            uploadButton.disabled = false;
-            progressBarContainer.style.display = 'none';
-            resetForm();
-        }
-    }
-
-    async function uploadToFolder(file, folderId, progressCallback) {
-        const metadata = {
-            name: file.name,
-            parents: [folderId]
-        };
-        const form = new FormData();
-        form.append('metadata', new Blob([JSON.stringify(metadata)], {type: 'application/json'}));
-        form.append('file', file);
-
-        const xhr = new XMLHttpRequest();
-        xhr.open('POST', 'https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart');
-        xhr.setRequestHeader('Authorization', 'Bearer ' + gapi.auth.getToken().access_token);
-
-        xhr.upload.onprogress = (event) => {
-            if (event.lengthComputable) {
-                const progress = (event.loaded / event.total) * 100;
-                progressCallback(progress);
+            if (gapi.client.getToken() === null) {
+                tokenClient.requestAccessToken({prompt: 'consent'});
+            } else {
+                tokenClient.requestAccessToken({prompt: ''});
             }
-        };
+        }
 
-        return new Promise((resolve, reject) => {
-            xhr.onload = () => {
-                if (xhr.status === 200) {
-                    resolve(JSON.parse(xhr.responseText));
-                } else {
-                    reject(new Error('Upload failed'));
+        function updateSemesterOptions() {
+            const subject = document.getElementById('uploadSubject').value;
+            const semesterSelect = document.getElementById('uploadSemester');
+            semesterSelect.innerHTML = '<option value="">Select Semester</option>';
+
+            if (subject && folderIds[subject]) {
+                for (const semester in folderIds[subject]) {
+                    if (semester !== 'id') {
+                        const option = document.createElement('option');
+                        option.value = semester;
+                        option.textContent = semester;
+                        semesterSelect.appendChild(option);
+                    }
+                }
+            }
+        }
+
+        function getFolderId(subject, semester) {
+            return folderIds[subject] && folderIds[subject][semester] ? folderIds[subject][semester] : null;
+        }
+
+        async function uploadFile() {
+            const subject = document.getElementById('uploadSubject').value;
+            const semester = document.getElementById('uploadSemester').value;
+            const fileInput = document.getElementById('fileInput');
+            
+            if (!subject || !semester || !fileInput.files[0]) {
+                showPopup('Please select a subject, semester, and choose a file');
+                return;
+            }
+
+            const file = fileInput.files[0];
+            const allowedTypes = ['application/pdf', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-powerpoint', 'application/vnd.openxmlformats-officedocument.presentationml.presentation'];
+
+            if (!allowedTypes.includes(file.type)) {
+                showPopup('Please upload only PDF, DOCX, or PPT files!');
+                return;
+            }
+
+            const folderId = getFolderId(subject, semester);
+
+            if (!folderId) {
+                showPopup('The selected subject and semester combination is not valid.');
+                return;
+            }
+
+            const uploadButton = document.getElementById('uploadButton');
+            const progressBarContainer = document.getElementById('progressBarContainer');
+            const progressBar = document.getElementById('progressBar');
+            const progressPercentage = document.getElementById('progressPercentage');
+
+            uploadButton.disabled = true;
+            progressBarContainer.style.display = 'block';
+            progressBar.style.width = '0%';
+            progressPercentage.textContent = '0%';
+
+            try {
+                const uploadedFile = await uploadToFolder(file, folderId, (progress) => {
+                    const percentage = Math.round(progress);
+                    progressBar.style.width = `${percentage}%`;
+                    progressPercentage.textContent = `${percentage}%`;
+                });
+                showPopup(`File "${uploadedFile.name}" uploaded successfully to ${subject} - ${semester}. Thank you for contributing to NotesBook!`);
+            } catch (error) {
+                console.error('Error uploading file', error);
+                showPopup('An error occurred while uploading the file. Please try again.');
+            } finally {
+                uploadButton.disabled = false;
+                progressBarContainer.style.display = 'none';
+                resetForm();
+            }
+        }
+
+        async function uploadToFolder(file, folderId, progressCallback) {
+            const metadata = {
+                name: file.name,
+                parents: [folderId]
+            };
+            const form = new FormData();
+            form.append('metadata', new Blob([JSON.stringify(metadata)], {type: 'application/json'}));
+            form.append('file', file);
+
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', 'https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart');
+            xhr.setRequestHeader('Authorization', 'Bearer ' + gapi.auth.getToken().access_token);
+
+            xhr.upload.onprogress = (event) => {
+                if (event.lengthComputable) {
+                    const progress = (event.loaded / event.total) * 100;
+                    progressCallback(progress);
                 }
             };
-            xhr.onerror = () => reject(new Error('Upload failed'));
-            xhr.send(form);
-        });
-    }
 
-    function resetForm() {
-        document.getElementById('uploadSubject').value = '';
-        document.getElementById('uploadSemester').innerHTML = '<option value="">Select Semester</option>';
-        document.getElementById('fileInput').value = '';
-    }
-
-    function showPopup(message) {
-        const popup = document.getElementById('popup');
-        const popupMessage = document.getElementById('popupMessage');
-        popupMessage.textContent = message;
-        popup.style.display = 'block';
-    }
-
-    function closePopup() {
-        document.getElementById('popup').style.display = 'none';
-    }
-
-    document.getElementById('uploadSubject').addEventListener('change', updateSemesterOptions);
-
-    // Close popup when clicking outside
-    window.onclick = function(event) {
-        const popup = document.getElementById('popup');
-        if (event.target == popup) {
-            closePopup();
+            return new Promise((resolve, reject) => {
+                xhr.onload = () => {
+                    if (xhr.status === 200) {
+                        resolve(JSON.parse(xhr.responseText));
+                    } else {
+                        reject(new Error('Upload failed'));
+                    }
+                };
+                xhr.onerror = () => reject(new Error('Upload failed'));
+                xhr.send(form);
+            });
         }
-    }
 
-    // Mobile menu toggle
+        function resetForm() {
+            document.getElementById('uploadSubject').value = '';
+            document.getElementById('uploadSemester').innerHTML = '<option value="">Select Semester</option>';
+            document.getElementById('fileInput').value = '';
+        }
+
+        function showPopup(message) {
+            const popup = document.getElementById('popup');
+            const popupMessage = document.getElementById('popupMessage');
+            popupMessage.textContent = message;
+            popup.style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+
+        document.getElementById('uploadSubject').addEventListener('change', updateSemesterOptions);
+
+        // Close popup when clicking outside
+        window.onclick = function(event) {
+            const popup = document.getElementById('popup');
+            if (event.target == popup) {
+                closePopup();
+            }
+        }
+
+        // Mobile menu toggle
 document.querySelector('.menu-btn').addEventListener('click', function() {
     document.querySelector('.menu').classList.toggle('active');
 });
-</script>
+    </script>
     <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
     <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
 </body>
