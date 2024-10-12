@@ -1,4 +1,5 @@
-[[headers]]
-  for = "/.netlify/functions/*"
-    [headers.values]
-    Access-Control-Allow-Origin = "*"
+[build]
+  functions = "functions"
+
+[[plugins]]
+  package = "@netlify/plugin-functions-install-core"
