@@ -44,7 +44,7 @@
             <div class="row align-items-center">
                 <div class="home-text">
                     <h1>NotesBook Notes Uploader</h1>
-                    
+
                     <div id="signInSection">
                         <p>Welcome to NotesBook Notes Uploader. To get started, please sign in with your Google account.</p>
                         <div id="signInButton">
@@ -107,8 +107,19 @@
     </footer>
 
     <script>
-        const CLIENT_ID = import.meta.env.CLIENT_ID;
-    const API_KEY = import.meta.env.API_KEY;
+        async function fetchCredentials() {
+    try {
+        const response = await fetch('/.netlify/functions/fetchApi');
+        if (!response.ok) {
+            throw new Error('Failed to fetch credentials');
+        }
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error fetching credentials:', error);
+        showPopup('Error fetching API credentials. Please try again later.');
+    }
+}
     const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/drive/v3/rest"];
     const SCOPES = 'https://www.googleapis.com/auth/drive.file';
 
@@ -122,23 +133,29 @@
         }
 
         async function initializeGapiClient() {
-            await gapi.client.init({
-                apiKey: API_KEY,
-                discoveryDocs: DISCOVERY_DOCS,
-            });
-            gapiInited = true;
-            maybeEnableButtons();
-        }
+    const credentials = await fetchCredentials();
+    if (!credentials) return;
 
-        function gisLoaded() {
-            tokenClient = google.accounts.oauth2.initTokenClient({
-                client_id: CLIENT_ID,
-                scope: SCOPES,
-                callback: '', // defined later
-            });
-            gisInited = true;
-            maybeEnableButtons();
-        }
+    await gapi.client.init({
+        apiKey: credentials.apiKey,
+        discoveryDocs: DISCOVERY_DOCS,
+    });
+    gapiInited = true;
+    maybeEnableButtons();
+}
+
+        async function gisLoaded() {
+    const credentials = await fetchCredentials();
+    if (!credentials) return;
+
+    tokenClient = google.accounts.oauth2.initTokenClient({
+        client_id: credentials.clientId,
+        scope: SCOPES,
+        callback: '', // defined later
+    });
+    gisInited = true;
+    maybeEnableButtons();
+}
 
         function maybeEnableButtons() {
             if (gapiInited && gisInited) {
@@ -211,7 +228,7 @@
             const subject = document.getElementById('uploadSubject').value;
             const semester = document.getElementById('uploadSemester').value;
             const fileInput = document.getElementById('fileInput');
-            
+
             if (!subject || !semester || !fileInput.files[0]) {
                 showPopup('Please select a subject, semester, and choose a file');
                 return;
