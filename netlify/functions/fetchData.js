@@ -1,13 +1,13 @@
-const fetch = require('node-fetch');
+const fetch = require('node-fetch'); // Import node-fetch to make API calls
 
 exports.handler = async function(event, context) {
   // Access the API key and client ID securely from environment variables
-  const apiKey = process.env.API_KEY;
-  const clientId = process.env.CLIENT_ID;
+  const apiKey = process.env.API_KEY; // Make sure to set this in your Netlify dashboard
+  const clientId = process.env.CLIENT_ID; // Make sure to set this in your Netlify dashboard
 
   try {
-    // Example API call using both API_KEY and CLIENT_ID (replace with your actual API URL)
-    const apiUrl = `https://api.example.com/data?api_key=${apiKey}&client_id=${clientId}`;
+    // Example API call using both API_KEY and CLIENT_ID
+    const apiUrl = `https://www.googleapis.com/auth/drive.file`;
     
     const response = await fetch(apiUrl);
     
@@ -20,6 +20,10 @@ exports.handler = async function(event, context) {
     return {
       statusCode: 200,
       body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json", // Set content type to JSON
+        "Access-Control-Allow-Origin": "*", // Allow all origins for CORS
+      },
     };
   } catch (error) {
     return {
