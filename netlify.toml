@@ -1,4 +1,4 @@
 [[headers]]
-  for = "/netlify/functions/*"
+  for = "/.netlify/functions/*"
     [headers.values]
     Access-Control-Allow-Origin = "*"
