@@ -1,0 +1,79 @@
+{
+  "Biochemistry": {
+    "id": "1VopkPkCY1rivd-R5tnkGDenRia_mkIhb",
+    "Semester 1": "1doq6ZtL1y09s-rakYM-sAIqraZb_moVN",
+    "Semester 2": "1doq6ZtL1y09s-rakYM-sAIqraZb_moVN",
+    "Semester 3": "1dqA6dWaqxXqOS71n4tCGC9XaFvvyOafp",
+    "Semester 4": "1cd78gVqxZwuCrqYSLlMbent0Vhot0niK",
+    "Semester 5": "1cdhN_cnGtnnIP-jQgYilehh8Al5K6MdA",
+    "Semester 6": "1dqA6dWaqxXqOS71n4tCGC9XaFvvyOafp"
+  },
+  "Biotechnology": {
+    "id": "1VquljNrcEpGYSA2z5nTob01WwCJWozVX",
+    "Semester 1": "1YbDyOueA98-52xj-inF0aK6Z10eAZZYi",
+    "Semester 2": "1YeENaFCmxoHSMNbMhtrOMdOGkon6okUA",
+    "Semester 3": "1cw6IjPvbb00be69_bJaLNgZVzsvw3KPJ",
+    "Semester 4": "1cz5x8LoK3hprwmRXInI2O1YTxd1RdXsB",
+    "Semester 5": "1d1KwiRn2tuVbQFJRNFDJxQAA1TZAyWo6",
+    "Semester 6": "1d4aOn8RKenyqnNkjEIEOcMkkkaAamFM-"
+  },
+  "Zoology": {
+    "id": "1W9lcVEfUx3oO7JMgRKj3mg_aNlyxOaCm",
+    "Semester 1": "1Zl8wryK5iIGDU-7-fAB6Sj2i5TZ5Z6H6",
+    "Semester 2": "1nZyNA-_MBUtze_9VuGWQlc5R26P3FNjR"
+  },
+  "Chemistry": {
+    "id": "1kXzfJsdqeUt8hMlEvHrlb3y6vdayAA1e",
+    "Semester 1": "1kXzfJsdqeUt8hMlEvHrlb3y6vdayAA1e",
+    "Semester 2": "1kZUjTM50mwqP-eMeDa-mbftAFD4DAZXe",
+    "Semester 3": "1gKn-JLw7eB_j9rNTk561l5dZG_M4EG18",
+    "Semester 4": "1gLob8lHYLV1JtUbnWai8QCe_EOVKYw5b",
+    "Semester 5": "1gMfVHmbDYITo3vRKSnKztiHv9cRrNXie",
+    "Semester 6": "1gRL5j9jdtEe09hi36dAUiPtByIti4Shu"
+  },
+  "Physics": {
+    "id": "10MARPhPkhfHpEC65ZCWy31M6Z67Inu36",
+    "Semester 1": "1g_-2dWNhulCEJHF5dlbWIkcN3aQpnCdN",
+    "Semester 2": "10QyFeOGwwToxmwtdkPvXaxl6eXkntG1H",
+    "Semester 3": "1g_CVfNo4dqisUdEyW196uqK4lJdEpLU4",
+    "Semester 4": "1gcRwT7UzhZZ9Vh97nyZ0FRqp_5ol_SdP",
+    "Semester 5": "1gcoH7WmPDc5QBNhBY3qB6XACgyvH1nF4",
+    "Semester 6": "1gfFkfBggsJ67BiIEPvqWEE6b_hK5pwDf"
+  },
+  "Botany": {
+    "id": "1W5FCtEzpikdCxx4--1ib3xKKrSsD0OSZ",
+    "Semester 1": "1-Qo8vXEZbdD4-e1Dx2NT92jAm5Vqhqoi",
+    "Semester 2": "1gip7jMasPw96vRRaOqTdU5UTlhtmdypZ",
+    "Semester 3": "1gmmWYq5Z5mpLfTElllA_Kz2C_xr63tRX",
+    "Semester 4": "1oSZrIqOF1hH8F-_Pj85iIx5TTZ0LgHKI",
+    "Semester 5": "1gpUNMIB6AYKhzGErRpP9RNgDnAXPDnO-",
+    "Semester 6": "1goOEiD__fqVpDco3spnMpWAggMgPNQyM"
+  },
+  "Political Science": {
+    "id": "1-jY-x3iIdS-IJJSC_v-N9-vyUdAzKBLB",
+    "Semester 1": "1-sthmIbw8MsInJ5FRzOIfcOsesfcC86C",
+    "Semester 2": "1h1wd86ROS6nGK6Q2e8mwnlnYrDvlnCxP",
+    "Semester 3": "10-cKtTGBDQEyj-XCUy4zvBAAUFZL3-IW",
+    "Semester 4": "1h2xlQTYeiwJs4rCk8SSIhgql7YeF8yQ_",
+    "Semester 5": "1h8W3h7tnSulVhpaIIlvhT3vLaEBnHbyZ",
+    "Semester 6": "1hGvkJzoQ55i52kiURISmLlQpyRIANpb_"
+  },
+  "Math": {
+    "id": "1hKTHQzYn1A0fTjFIZNTDnWH-3IxqQIZJ",
+    "Semester 1": "1hN9XXudbEZgpgM-av0yNTdpzvIAPp-at",
+    "Semester 2": "1hOjVHhijEZsB9mPfqgfrS6qcQR0rrDeX",
+    "Semester 3": "1hX9OFScSvjDXJhFqI5EheK8Ozz7w7GQh",
+    "Semester 4": "1hXQt_myaMpNZTmpUNp7tQzmS6tb2mksf",
+    "Semester 5": "1hZV3td1-3XPQ3I-iDqvc88euhedI4KPc",
+    "Semester 6": "1haQUyuBUIVtoKrojoxObhHwqiwEQNQZ9"
+  },
+  "Information Technology": {
+    "id": "1W2yT1lpwDuaN8fAFmPKGmbv1fEXE4NIx",
+    "Semester 1": "1hefybEqt2kqklIqLf8NBBjCPSFN6lgim",
+    "Semester 2": "1GheDf3i4QUXZ1cd3n1EfJuer0ScVvhiN",
+    "Semester 3": "1hgs4yA6ctCEmXZ20-ViBKb1s3JhkRAt0",
+    "Semester 4": "1hhZ7IaE7X_8lcw_z7X2Ucd_LRVHbxoEw",
+    "Semester 5": "1hhnifenuLIZnWXC2UrQk-YrIR8UB2ueG",
+    "Semester 6": "1hmZMybcgtGubWuSBC86o5tpVxyJ-dg8b"
+  }
+}
