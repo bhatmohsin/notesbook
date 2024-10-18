@@ -94,7 +94,7 @@
 
         async function loadFolderIds() {
             try {
-                const response = await fetch('subjectids.json');
+                const response = await fetch('/subjectids.json');
                 folderIds = await response.json();
                 updateSubjectOptions();
             } catch (error) {
