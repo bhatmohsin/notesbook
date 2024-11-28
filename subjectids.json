@@ -76,21 +76,13 @@
     "Semester 5": "1hhnifenuLIZnWXC2UrQk-YrIR8UB2ueG",
     "Semester 6": "1hmZMybcgtGubWuSBC86o5tpVxyJ-dg8b"
   },
-  "Environmental science": {
-      "id : "1YzZvZIgpQ7l-C00qHVCaXAR7e5QHcgw7",
-      "Semester 1":
-"1BQdlvk5ng8ZFtE_PYFieRAhVe1tjDUuC",
-      "Semester 2":
-"1BQiFVSHxcAE81fTo4Ya8XjlVb2vfUMDq",
-      "Semester 3":
-"1BS8J7ybSYhskQnBrb62OhbcWF6eCL7er",
-      "Semester 4":
-"1oTIiXt4TcEwlOMKp2cvIJ6_PCxDrWN11",
-      "Semester 5":
-"1BSDukEby7777dmf7jgWdgkcWkD79zg-G",
-      "Semester 6":
-"1BT2ghz3evdu4OPL0M4Wuuqq4YfdDT_a8", 
-      "VAC" :
-"1ZAhfqbiRrFBpRN7DnBnjvUOAprvb3EcN",
-  }
+"Environmental Science": {
+  "id": "1YzZvZIgpQ7l-C00qHVCaXAR7e5QHcgw7",
+  "Semester 1": "1BQdlvk5ng8ZFtE_PYFieRAhVe1tjDUuC",
+  "Semester 2": "1BQiFVSHxcAE81fTo4Ya8XjlVb2vfUMDq",
+  "Semester 3": "1BS8J7ybSYhskQnBrb62OhbcWF6eCL7er",
+  "Semester 4": "1oTIiXt4TcEwlOMKp2cvIJ6_PCxDrWN11",
+  "Semester 5": "1BSDukEby7777dmf7jgWdgkcWkD79zg-G",
+  "Semester 6": "1BT2ghz3evdu4OPL0M4Wuuqq4YfdDT_a8",
+  "VAC": "1ZAhfqbiRrFBpRN7DnBnjvUOAprvb3EcN"
 }
