@@ -20,63 +20,83 @@
     <!--===== Font Awesome =====-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!--===== Main CSS =====-->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="style.css">
     <style>
+
         #myInput {
             width: 100%;
             font-size: 16px;
-            padding: 12px 20px 12px 40px;
+            padding: 12px 20px;
+            margin-bottom: 20px;
             border: 1px solid #ddd;
-            margin-bottom: 12px;
         }
 
-        #myTable {
-            border-collapse: collapse;
+        .subject-block {
+            display: none; /* Hidden initially, filtered dynamically */
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            background: #f9f9f9;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .subject-title {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        table {
             width: 100%;
-            border: 1px solid #ddd;
-            font-size: 18px;
+            border-collapse: collapse;
         }
 
-        #myTable th, #myTable td {
-            text-align: left;
+        th, td {
             padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
         }
 
-        #myTable tr {
-            border-bottom: 1px solid #ddd;
-        }
-
-        #myTable tr.header, #myTable tr:hover {
-            background-color: #f1f1f1;
-        }
-        /* New styles for buttons */
-        .btn-container {
-            display: flex;
-            flex-wrap: nowrap;
-            gap: 10px;
+        th {
+            background: #007bff;
+            color: #fff;
         }
 
         .btn-1 {
             display: inline-block;
-            padding: 7px 10px;
+            padding: 8px 12px;
             font-size: 14px;
             text-align: center;
             text-decoration: none;
-            background-color: #007bff;
-            color: white;
-            border-radius: 6px;
-            margin-top: 5px;
-            transition: background-color 0.3s;
+            color: #fff;
+            background: #007bff;
+            border-radius: 5px;
+            transition: background 0.3s;
         }
 
         .btn-1:hover {
-            background-color: #0056b3;
+            background: #0056b3;
+        }
+
+        .section-title {
+            text-align: center;
+            padding-top:50px;
+        }
+
+        .section-title h3 {
+            font-size: 28px;
+        }
+
+        .section-title h5 {
+            color: #666;
+            font-size: 18px;
         }
     </style>
 </head>
 
 <body>
-    <!--===== Navbar Start =====-->
+        <!--===== Navbar Start =====-->
     <nav class="navbar">
         <div class="container">
             <div class="row justify-content-between">
@@ -100,140 +120,279 @@
     </nav>
     <!--===== Navbar End =====-->
 
-    <!--===== Old Exam Papers Section Start =====-->
-    <section class="old-exam-papers-section section-padding" id="old-exam-papers">
+    <section id="old-exam-papers">
         <div class="container">
-            <div class="row">
-                <div class="section-title text-align">
-                    <h5 class="sub-title">Old Exam Papers</h5>
-                    <h3 class="main-title">Search and Download</h3>
-                    <ul class="line">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
+            <div class="section-title">
+                <h5>Old Exam Papers</h5>
+                <h3>Search and Download</h3>
             </div>
-            <div class="row">
-                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for subjects...">
 
-                <table id="myTable">
-                    <tr class="header">
-                        <th style="width:60%;">Subject</th>
-                        <th style="width:40%;">Download</th>
-                    </tr>
-                  
-                    <tr>
-                        <td>Zoology(3rd-sem)</td>
-                        <td>
-                            <a href="https://drive.google.com/file/d/1t8DlTg7i86LByrE-IdVdX0xVe9CaADrF/view?usp=drivesdk" class="btn btn-1">2024</a>
-                        </td>
-                    </tr>
-                   
-                    <tr>
-    <td>History MD</td>
-    <td>
-        <!--<a href="#" class="btn btn-1">2024</a>
-        <a href="#" class="btn btn-1">2023</a>-->
-        <a href="https://drive.google.com/file/d/1cVSBxVYYly0zyNRf-estaZHVIbWR99us/view?usp=drivesdk" class="btn btn-1">2022</a>
-    </td>
-</tr>
-<tr>
-    <td>Understanding India</td>
-    <td>
-         <a href="https://drive.google.com/file/d/1xQDve7xoWEyjPmMHj9s0N9T8MQP1j-d4/view?usp=drivesdk" class="btn btn-1">2024</a>
-        <a href="https://drive.google.com/file/d/1csDKVVMLtxuPQbJ2_r2aWDQKrP2zpqDT/view?usp=drivesdk" class="btn btn-1">2023</a>
-        <a href="https://drive.google.com/file/d/1cuNF_pASOuLwD_Q-F-pPMECkQGsGLsTh/view?usp=drivesdk" class="btn btn-1">2022</a>
-    </td>
-</tr>
-<tr>
-    <td>Essentials of Communication</td>
-    <td>
-        <a href="https://drive.google.com/file/d/1dbMWMKE_zRMaj9S2kcbC_5o9dbfF-_rW/view?usp=drivesdk" class="btn btn-1">2022</a>
-    </td>
-</tr>
-<tr>
-    <td>English Language</td>
-    <td>
-        <a href="https://drive.google.com/file/d/1Rd_8aMNaGTUBf7zxNY2qV3AJaJpkmBoJ/view?usp=drivesdk" class="btn btn-1">2024</a>
-        <a href="https://drive.google.com/file/d/1ckOa4dnSD-xisRFBbRW5QzwuSbZijnPh/view?usp=drivesdk" class="btn btn-1">2022</a>
-    </td>
-</tr>
-<tr>
-    <td>Communication Skills</td>
-    <td>
-        <!--<a href="#" class="btn btn-1">2024</a>
-        <a href="#" class="btn btn-1">2023</a>-->
-        <a href="https://drive.google.com/file/d/1cUs1Jy_R9UgDDOLwK04l9-RSxdfJlYWi/view?usp=drivesdk" class="btn btn-1">2022</a>
-    </td>
-</tr>
-<tr>
-    <td>Health and Wellness</td>
-    <td>
-        <a href="https://drive.google.com/file/d/101ix9IRu_Oj8__xvuFgZzoCRL__zhTZz/view?usp=drivesdk" class="btn btn-1">2024(2)</a>
-        <a href="https://drive.google.com/file/d/1cONBdTrU4deS4wHWkf61P0A_4qFWjHQO/view?usp=drivesdk" class="btn btn-1">2024(1)</a>
-        <a href="https://drive.google.com/file/d/1ccLrnv68fgC9WQIetV8KgWN7KAj_LEOc/view?usp=drivesdk" class="btn btn-1">2022</a>
-    </td>
-</tr>
-<tr>
-    <td>Physical Education</td>
-    <td>
-        <a href="https://drive.google.com/file/d/1QpCdgEKaLqquDKEbXO3XzPvz4ClgMe9D/view?usp=drivesdk" class="btn btn-1">2024</a>
-        <a href="https://drive.google.com/file/d/1cZG5FPRgYRTsqU8LwLkWqgvIA1Y-8Oul/view?usp=drivesdk" class="btn btn-1">2023</a>
-       <!-- <a href="#" class="btn btn-1">2022</a>-->
-    </td>
-</tr>
+            <!-- Search Bar -->
+            <input type="text" id="myInput" onkeyup="filterSubjects()" placeholder="Search for subjects...">
 
-<tr>
-    <td>EVS (VAC)</td>
-    <td>
-        <a href="https://drive.google.com/file/d/1lysA3henOC_7PBn96ICnc8PwlbN6hrB6/view?usp=drivesdk" class="btn btn-1">2024</a>
-        <a href="#" class="btn btn-1">2023</a>
-        <a href="#" class="btn btn-1">2022</a>
-    </td>
-<tr>
-    <td>EVS(Major) 2nd sem</td>
-    <td>
-        <a href= "https://drive.google.com/file/d/1n9zwrv_IK_Ygwh1NuludIzeqf45NSJxn/view?usp=drivesdk" class="btn btn-1">2024</a>
-        <!--<a href="#" class="btn btn-1">2023</a>
-        <a href="#" class="btn btn-1">2022</a>-->
-    </td>
-</tr>
-<tr>
-    <td>DTS (VAC)</td>
-    <td>
-        <!--<a href="#" class="btn btn-1">2024</a>-->
-        <a href="https://drive.google.com/file/d/1luPtxZA5uv6lKAHQe-zAA_7lASU8Ewyv/view?usp=drivesdk" class="btn btn-1">2023</a>
-        <!--<a href="#" class="btn btn-1">2022</a>-->
-    </td>
-</tr>
-<tr>
-    <td>Library Science</td>
-    <td>
-        <a href="https://drive.google.com/file/d/1dOf7p3ldEL8nD8bTJkL6c1iz2MRUUsA-/view?usp=drivesdk" class="btn btn-1">2024</a>
-        <a href="https://drive.google.com/file/d/1cbKi289Zqsa0PPehA3BVt-r4pqhn1EJr/view?usp=drivesdk" class="btn btn-1">2023</a>
-        <a href="https://drive.google.com/file/d/1cbKi289Zqsa0PPehA3BVt-r4pqhn1EJr/view?usp=drivesdk" class="btn btn-1">2024</a>
-        <a href="#" class="btn btn-1">2022(2nd)</a>
-        <a href="https://drive.google.com/file/d/1cVSBxVYYly0zyNRf-estaZHVIbWR99us/view?usp=drivesdk" class="btn btn-1">2022(ist)</a>
-    </td>
-</tr>
-  <tr>
-                        <td>Urdu(Shair-o-adab)</td>
-                        <td>
-                            <a href="https://drive.google.com/file/d/1t3xBHGm4kcqKvvXHQnprsqqJb1cFk2Ii/view?usp=drivesdk" class="btn btn-1">2023</a>
-                            <a href="https://drive.google.com/file/d/1t2po0PvEUOvOB27SQG8bR-5T8Bnpy_Fw/view?usp=drivesdk" class="btn btn-1">2022</a>
-                        </td>
-                    </tr>
-                                                          <tr>
-                        <td>water Management(second-sem)</td>
-                        <td>
-                            <a href="https://drive.google.com/file/d/1t0d7LdC22lPOsKJ_EuxZkQss159wTcIj/view?usp=drivesdk" class="btn btn-1">2023</a>
-                                        </tr>
-                </table>
-            </div>
-        </div>
+<!-- Subject Blocks -->
+<div id="subjects">
+    <!-- Biochemistry Block -->
+    <div class="subject-block">
+        <h4 class="subject-title">Biochemistry</h4>
+        <table>
+            <tr>
+                <th>Semester</th>
+                <th>Download</th>
+            </tr>
+            <tr>
+                <td>1st Semester</td>
+                <td><a href="https://drive.google.com/file/d/1EG7TrwL2lY5S77nHuK5ob99a7W70zzEg/view?usp=drivesdk" class="btn-1">2024</a></td>
+            </tr>
+            <tr>
+                <td>2nd Semester</td>
+                <td><a href="https://drive.google.com/file/d/1DNO4fYGXJ12ClO-UDQxdPyycKLae-Lm0/view?usp=drivesdk" class="btn-1">2024</a></td>
+            </tr>
+            <tr>
+                <td>3rd Semester</td>
+                <td><a href="https://drive.google.com/file/d/1Dr_JKdLU87dYvgrJZfDTweMxDRr83W58/view?usp=drivesdk" class="btn-1">2024</a></td>
+            </tr>
+            <!--
+            <tr>
+                <td>4th Semester</td>
+                <td><a href="#" class="btn-1">2024</a></td>
+            </tr>
+            <tr>
+                <td>5th Semester</td>
+                <td><a href="#" class="btn-1">2024</a></td>
+            </tr>
+            <tr>
+                <td>6th Semester</td>
+                <td><a href="#" class="btn-1">2024</a></td>
+            </tr>-->
+        </table>
+    </div>
+    <!-- Zoology Block -->
+    <div class="subject-block">
+        <h4 class="subject-title">Zoology</h4>
+        <table>
+            <tr>
+                <th>Semester</th>
+                <th>Download</th>
+            </tr>
+            <tr>
+                <td>1st Semester</td>
+                <td><a href="https://drive.google.com/file/d/1BO3jjjfJFWhXk1ye5Vuoafny5w4FbMfc/view?usp=drivesdk" class="btn-1">2024</a></td>
+            </tr>
+            <tr>
+                <td>2nd Semester</td>
+                <td><a href="https://drive.google.com/file/d/1DNO4fYGXJ12ClO-UDQxdPyycKLae-Lm0/view?usp=drivesdk" class="btn-1">2024</a></td>
+            </tr>
+            <tr>
+                <td>3rd Semester</td>
+                <td><a href="https://drive.google.com/file/d/1t8DlTg7i86LByrE-IdVdX0xVe9CaADrF/view?usp=drivesdk" class="btn-1">2024</a></td>
+            </tr>
+            <tr>
+                <!--
+                <td>4th Semester</td>
+                <td><a href="#" class="btn-1">2024</a></td>
+            </tr>
+            <tr>
+                <td>5th Semester</td>
+                <td><a href="#" class="btn-1">2024</a></td>
+            </tr>
+            <tr>
+                <td>6th Semester</td>
+                <td><a href="#" class="btn-1">2024</a></td>
+            </tr>-->
+        </table>
+    </div> 
+
+    <!-- Biotechnology -->
+    <div class="subject-block">
+        <h4 class="subject-title">Biotechnology</h4>
+        <table>
+            <tr><th>Semester</th><th>Download</th></tr>
+            <tr><td>3rd Semester</td><td><a href="https://drive.google.com/file/d/1EMCHRsymbt4LjGnKloBUfAx5xHyJVm4J/view?usp=drivesdk" class="btn-1">2024</a></td></tr>
+            <!--<tr><td>2nd Semester</td><td><a href="#" class="btn-1">2024</a></td></tr>
+            <tr><td>3rd Semester</td><td><a href="#" class="btn-1">2024</a></td></tr>
+            <tr><td>4th Semester</td><td><a href="#" class="btn-1">2024</a></td></tr>
+            <tr><td>5th Semester</td><td><a href="#" class="btn-1">2024</a></td></tr>
+            <tr><td>6th Semester</td><td><a href="#" class="btn-1">2024</a></td></tr>-->
+        </table>
+    </div>
+    <div class="subject-block"><h4 class="subject-title">Bioinformatics</h4>
+    <table>
+            <tr><th>Semester</th><th>Download</th></tr>
+            <tr><td>1st Semester</td><td><a href="https://drive.google.com/file/d/1EG1COlixSrbxHQhmY3kh23atepyo18q8/view?usp=drivesdk" class="btn-1">2024</a></td></tr>
+            <tr><td>2nd Semester</td><td><a href="https://drive.google.com/file/d/1DGgmmBsqQuxBJsoiUj-CFXamDu8EskEC/view?usp=drivesdk" class="btn-1">2024</a></td></tr>
+            <!--<tr><td>3rd Semester</td><td><a href="#" class="btn-1">2024</a></td></tr>
+            <tr><td>4th Semester</td><td><a href="#" class="btn-1">2024</a></td></tr>
+            <tr><td>5th Semester</td><td><a href="#" class="btn-1">2024</a></td></tr>
+            <tr><td>6th Semester</td><td><a href="#" class="btn-1">2024</a></td></tr>-->
+    </table>
+    </div>
+    <div class="subject-block"><h4 class="subject-title">Clinical Biochemistry</h4>
+    <table>
+            <tr><th>Semester</th><th>Download</th></tr>
+            <tr><td>1st Semester</td><td><a href="https://drive.google.com/file/d/1DyYCvqTNmvu8NlSSHI79cs--Z0v_a26-/view?usp=drivesdk" class="btn-1">2024</a></td></tr>
+            <tr><td>2nd Semester</td><td><a href="https://drive.google.com/file/d/1Ds1iJeifj-831pUnyY221cor9PnqriPI/view?usp=drivesdk" class="btn-1">2024</a></td></tr>
+            <tr><td>3rd Semester</td><td><a href="https://drive.google.com/file/d/1Ds0l2NnM4mSh5yFYPoTn1FoVp4TZAVyV/view?usp=drivesdk" class="btn-1">2024</a></td></tr>
+         <!--<tr><td>4th Semester</td><td><a href="#" class="btn-1">2024</a></td></tr>
+            <tr><td>5th Semester</td><td><a href="#" class="btn-1">2024</a></td></tr>
+            <tr><td>6th Semester</td><td><a href="#" class="btn-1">2024</a></td></tr>-->
+    </table>
+    </div>
+    <div class="subject-block"><h4 class="subject-title">History</h4>
+    <table>
+            <!-- Add rows for all six semesters -->
+            <tr><th>Semester</th><th>Download</th></tr>
+            <tr><td>Understanding India</td><td><a href="https://drive.google.com/file/d/1xQDve7xoWEyjPmMHj9s0N9T8MQP1j-d4/view?usp=drivesdk" class="btn-1">2024</a> 
+<a href="https://drive.google.com/file/d/1csDKVVMLtxuPQbJ2_r2aWDQKrP2zpqDT/view?usp=drivesdk" class="btn-1">2023</a>
+<a href="https://drive.google.com/file/d/1cuNF_pASOuLwD_Q-F-pPMECkQGsGLsTh/view?usp=drivesdk" class="btn-1">2022</a>
+</td></tr>
+            
+            <tr><td>History (Md)</td><td><a href="https://drive.google.com/file/d/1cVSBxVYYly0zyNRf-estaZHVIbWR99us/view?usp=drivesdk" class="btn-1">2022</a></td></tr>
+    </table>
+    </div>
+    <div class="subject-block"><h4 class="subject-title">Physical Education</h4>
+        <table>
+            <tr>
+                <th>Semester</th>
+                <th>Download</th>
+            </tr>
+            <tr>
+                <td>Health and Wellness</td>
+                <td><a href="https://drive.google.com/file/d/1Dpc2YLQS6JqbdDH9UmIr2KBZmT151v3v/view?usp=drivesdk" class="btn-1">2024</a>
+<a href="https://drive.google.com/file/d/1ccLrnv68fgC9WQIetV8KgWN7KAj_LEOc/view?usp=drivesdk" class="btn-1">2022</a></td>
+            </tr>
+            <tr>
+                <td>Physical Education (Md)</td>
+                <td><a href="https://drive.google.com/file/d/1QpCdgEKaLqquDKEbXO3XzPvz4ClgMe9D/view?usp=drivesdk" class="btn-1">2024(1)</a>
+                  <a href="https://drive.google.com/file/d/1cZG5FPRgYRTsqU8LwLkWqgvIA1Y-8Oul/view?usp=drivesdk" class="btn-1">2023</a>
+                  <a href= "https://drive.google.com/file/d/1EG8bvoHxJTT6h_F9A6DQUguQY7SWSLrZ/view?usp=drivesdk" class="btn-1">2024(2)</a>
+                </td>
+            </tr>
+        </table>
+    
+    </div>
+    <div class="subject-block"><h4 class="subject-title">Physics</h4></div>
+    <div class="subject-block"><h4 class="subject-title">Chemistry</h4></div>
+    <div class="subject-block"><h4 class="subject-title">Botany</h4></div>
+    <div class="subject-block"><h4 class="subject-title">English</h4>
+    <table>
+            <tr>
+                <th>Semester</th>
+                <th>Download</th>
+            </tr>
+            <tr>
+                <td>Essentials of Communication</td>
+                <td><a href="https://drive.google.com/file/d/1dbMWMKE_zRMaj9S2kcbC_5o9dbfF-_rW/view?usp=drivesdk" class="btn-1">2022</a></td>
+            </tr>
+            <tr>
+                <td>Communication Skills</td>
+                <td><a href="https://drive.google.com/file/d/1cUs1Jy_R9UgDDOLwK04l9-RSxdfJlYWi/view?usp=drivesdk" class="btn-1">2022</a></td>
+            </tr>
+        <tr>
+                <td>English Language</td>
+                <td><a href="https://drive.google.com/file/d/1Rd_8aMNaGTUBf7zxNY2qV3AJaJpkmBoJ/view?usp=drivesdk" class="btn-1">2024</a>
+                    <a href="https://drive.google.com/file/d/1ckOa4dnSD-xisRFBbRW5QzwuSbZijnPh/view?usp=drivesdk" class="btn-1">2022</a>
+
+                </td>
+        </tr>
+    </table>
+    </div>
+    <div class="subject-block"><h4 class="subject-title">Urdu</h4>
+    <table>
+            <tr>
+                <th>Semester</th>
+                <th>Download</th>
+            </tr>
+            <tr>
+                <td>Urdu Shair-O-Adab</td>
+                <td><a href="https://drive.google.com/file/d/1t3xBHGm4kcqKvvXHQnprsqqJb1cFk2Ii/view?usp=drivesdk" class="btn-1">2023</a>
+                    <a href="https://drive.google.com/file/d/1t2po0PvEUOvOB27SQG8bR-5T8Bnpy_Fw/view?usp=drivesdk" class="btn-1">2022</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Urdu Zuban-O-Adab</td>
+                <td><a href="https://drive.google.com/file/d/1BqWft_PzNvyju5HwZkuRNtwW54a9AchL/view?usp=drivesdk" class="btn-1">2023</a></td>
+            </tr>
+    </table>
+    </div>
+    <div class="subject-block"><h4 class="subject-title">Geography</h4></div>
+    <div class="subject-block"><h4 class="subject-title">Math</h4></div>
+    <div class="subject-block"><h4 class="subject-title">IT</h4>
+            <table>
+            <tr>
+                <th>Semester</th>
+                <th>Download</th>
+            </tr>
+            <!--<tr>
+                <td>1st Semester</td>
+                <td><a href="#" class="btn-1">2024</a></td>
+            </tr>
+            <tr>
+                <td>2nd Semester</td>
+                <td><a href="#" class="btn-1">2024</a></td>
+            </tr>
+            <tr>
+                <td>3rd Semester</td>
+                <td><a href="#" class="btn-1">2024</a></td>
+            </tr>
+            <tr>
+                <td>4th Semester</td>
+                <td><a href="#" class="btn-1">2024</a></td>
+            </tr>
+            <tr>
+                <td>5th Semester</td>
+                <td><a href="#" class="btn-1">2024</a></td>
+            </tr>
+            <tr>
+                <td>6th Semester</td>
+                <td><a href="#" class="btn-1">2024</a></td>
+            </tr>-->
+            <tr>
+                <td>DTS(VAC</td>
+                <td><a href="https://drive.google.com/file/d/1luPtxZA5uv6lKAHQe-zAA_7lASU8Ewyv/view?usp=drivesdk" class="btn-1">2024</a></td>
+            </tr>
+            </table>
+    </div>
+</div>
+    <div class="subject-block"><h4 class="subject-title">Environmental Science</h4>
+    <table>
+       <tr>
+                <th>Semester</th>
+                <th>Download</th>
+            </tr>
+            <tr>
+                <td>Evs (Vac)</td>
+                <td><a href="https://drive.google.com/file/d/1lysA3henOC_7PBn96ICnc8PwlbN6hrB6/view?usp=drivesdk" class="btn-1">2024</a>
+                    
+                </td>
+            </tr>
+                
+            <tr>
+                <td>Second Sem</td>
+                <td><a href="https://drive.google.com/file/d/1n9zwrv_IK_Ygwh1NuludIzeqf45NSJxn/view?usp=drivesdk" class="btn-1">2024</a></td>
+            </tr>
+            <tr>     
+    </table>
+    </div>
+    <div class="subject-block"><h4 class="subject-title">Library Science </h4>
+    <table>
+       <tr>
+                <th>Semester</th>
+                <th>Download</th>
+            </tr>
+            <tr>
+                <td>Library Science (MD)</td>
+                <td><a href="https://drive.google.com/file/d/1cbKi289Zqsa0PPehA3BVt-r4pqhn1EJr/view?usp=drivesdk" class="btn-1">2024(1)</a>
+                    <a href="https://drive.google.com/file/d/1dOf7p3ldEL8nD8bTJkL6c1iz2MRUUsA-/view?usp=drivesdk" class="btn-1">2024(2)</a>
+                    <a href="https://drive.google.com/file/d/1cbKi289Zqsa0PPehA3BVt-r4pqhn1EJr/view?usp=drivesdk" class="btn-1">2023</a>
+                    <a href="https://drive.google.com/file/d/1cVSBxVYYly0zyNRf-estaZHVIbWR99us/view?usp=drivesdk" class="btn-1">2022</a>
+                    
+                </td>
+            </tr>
+    </table>
+    </div>
+    </div>
     </section>
-    <!--===== Old Exam Papers Section End =====-->
  <!--===== Footer Section Start =====-->
 <footer class="footer">
     <div class="container">
@@ -253,27 +412,31 @@
         </div>
     </div>
 </footer>
+
 <!--===== Footer Section End =====-->
-    <script src="/js/main.js"></script>
+    <script src="script.js"></script>
+
     <script>
-        function myFunction() {
-            var input, filter, table, tr, td, i, txtValue;
-            input = document.getElementById("myInput");
-            filter = input.value.toUpperCase();
-            table = document.getElementById("myTable");
-            tr = table.getElementsByTagName("tr");
-            for (i = 0; i < tr.length; i++) {
-                td = tr[i].getElementsByTagName("td")[0];
-                if (td) {
-                    txtValue = td.textContent || td.innerText;
-                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                        tr[i].style.display = "";
-                    } else {
-                        tr[i].style.display = "none";
-                    }
+        function filterSubjects() {
+            const input = document.getElementById("myInput").value.toLowerCase();
+            const subjectBlocks = document.querySelectorAll(".subject-block");
+
+            subjectBlocks.forEach(block => {
+                const title = block.querySelector(".subject-title").textContent.toLowerCase();
+                if (title.includes(input)) {
+                    block.style.display = "block";
+                } else {
+                    block.style.display = "none";
                 }
-            }
+            });
         }
+
+        // Display all subjects by default
+        document.addEventListener("DOMContentLoaded", () => {
+            const subjectBlocks = document.querySelectorAll(".subject-block");
+            subjectBlocks.forEach(block => block.style.display = "block");
+        });
     </script>
 </body>
+
 </html>
