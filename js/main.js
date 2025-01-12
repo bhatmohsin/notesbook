@@ -20,3 +20,21 @@
           navMenu.classList.remove("active")
       }
       navLink.forEach(n => n.addEventListener("click", linkAction))
+/*===== Serch for the subject  =====*/
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('searchInput');
+    
+    searchInput.addEventListener('input', function() {
+        const searchTerm = this.value.toLowerCase();
+        const subjects = document.querySelectorAll('.pricing-item');
+        
+        subjects.forEach(item => {
+            const text = item.textContent.toLowerCase();
+            if(text.includes(searchTerm)) {
+                item.style.display = '';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+});
