@@ -1,0 +1,639 @@
+{
+  "subjects": {
+    "Economics": {
+      "Sem-1": [
+        {
+          "title": "Economics MDC Notes Cluster",
+          "url": "https://drive.google.com/file/d/1Lvdg7GIUbwVm0TuW5oCSBQtm_JgFn5Nd/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2025-01-10"
+        }
+      ],
+      "Sem-2": [],
+      "Sem-3": [
+        {
+          "title": "Economics Major 3rd sem",
+          "url": "https://drive.google.com/file/d/19xBw5vY1NHbDJTvtQ_6frw6RkMdxE7bD/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2025-01-11"
+        },
+        {
+          "title": "Economics Major 3rd sem",
+          "url": "https://drive.google.com/file/d/1WTHk4ICOCXRLs5Et5YYMDcNh93Dw2cXK/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-12-30"
+        },
+        {
+          "title": "Economics Major 3rd sem - Aazim ibn Mushtaq.",
+          "url": "https://drive.google.com/file/d/1HwM0S-32539Dzueh6E7sWEZPDt7v1-_U/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-12-29"
+        }
+      ],
+      "Sem-4": [],
+      "Sem-5": [],
+      "Sem-6": []
+    },
+    "English": {
+      "Sem-1": [],
+      "Sem-2": [],
+      "Sem-3": [],
+      "Sem-4": [],
+      "Sem-5": [],
+      "Sem-6": []
+    },
+    "English - English laungage": {
+      "Sem-1": [],
+      "Sem-2": [],
+      "Sem-3": []
+    },
+    "English - Essentials of communication": {
+      "Sem-1": [],
+      "Sem-2": [
+        {
+          "title": "2nd sem essentials of communication _240810_125841",
+          "url": "https://drive.google.com/file/d/1sIUSLjI5naKM99JuHZ9PwjnUcuj-40JN/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-19"
+        }
+      ],
+      "Sem-3": []
+    },
+    "English - Communication skills": {
+      "Sem-1": [
+        {
+          "title": "COMMUNICATION SKILLS (IST SEM) NOTES.  BY SAKI",
+          "url": "https://drive.google.com/file/d/1VOIEy-DvwXhIL0dkf9Ofm3EuU2EGKdQc/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2025-01-29"
+        },
+        {
+          "title": "Communication_Skills_Ability_Enhancement_Notes_1st_to_3rd_Semester",
+          "url": "https://drive.google.com/file/d/1YXwluebkVZtzHe-y1bIntz5Xt8S-GIpt/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-13"
+        }
+      ],
+      "Sem-2": [],
+      "Sem-3": [
+        {
+          "title": "Communication skills notes 1-3rd sem (AEC)",
+          "url": "https://drive.google.com/file/d/1VNP-95buuVB78nxnP6B8w5_7g40h0Id7/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2025-01-29"
+        }
+      ]
+    },
+    "Library science": {
+      "Sem-1": [],
+      "Sem-2": [],
+      "Sem-3": [],
+      "Sem-4": [],
+      "Sem-5": [],
+      "Sem-6": []
+    },
+    "Earth science": {
+      "Sem-1": [],
+      "Sem-2": [],
+      "Sem-3": [],
+      "Sem-4": [],
+      "Sem-5": [],
+      "Sem-6": []
+    },
+    "Earth science - Water management": {
+      "Sem-1": [
+        {
+          "title": "1st sem water management _240316_091150",
+          "url": "https://drive.google.com/file/d/1rd8ZTZC1mc-L3g_YLJY1uH0rFJh7stor/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-19"
+        }
+      ],
+      "Sem-2": [
+        {
+          "title": "2nd sem water management_240707_111754",
+          "url": "https://drive.google.com/file/d/1qu6AkyBgyx1TTJRbeywTtTQUDwhqSDDB/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-18"
+        }
+      ],
+      "Sem-3": []
+    },
+    "Earth science - Geography": {
+      "Sem-1": [],
+      "Sem-2": [],
+      "Sem-3": [],
+      "Sem-4": [
+        {
+          "title": "URBAN GEOGRAPHY",
+          "url": "https://drive.google.com/file/d/1oxAs949vi2mTzL2qfnQGhe9cuFijof9j/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-18"
+        }
+      ],
+      "Sem-5": [],
+      "Sem-6": []
+    },
+    "Urdu": {
+      "Sem-1": [],
+      "Sem-2": [],
+      "Sem-3": [
+        {
+          "title": "3rd sem Urdu AEC_240705_214002",
+          "url": "https://drive.google.com/file/d/1sIHG1B6-s-zlkmFrE1uSUTcewRSIoGH2/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-19"
+        },
+        {
+          "title": "3rd sem urdu adaab_240705_213912",
+          "url": "https://drive.google.com/file/d/1qRu97c20Eil8Pf2Tph15YH1GUF-bKjGA/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-18"
+        },
+        {
+          "title": "3rd sem URDU AEC_240422_160855",
+          "url": "https://drive.google.com/file/d/1qKJA2owv2aK661rA9UpC_tCPQDVDfYy4/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-18"
+        }
+      ],
+      "Sem-4": [],
+      "Sem-5": [],
+      "Sem-6": []
+    },
+    "History": {
+      "Sem-1": [],
+      "Sem-2": [],
+      "Sem-3": [],
+      "Sem-4": [],
+      "Sem-5": [],
+      "Sem-6": []
+    },
+    "History - Understanding India": {
+      "Sem-1": [],
+      "Sem-2": []
+    },
+    "History - History( md)": {
+      "Sem-1": [
+        {
+          "title": "1st sem History_240308_013612",
+          "url": "https://drive.google.com/file/d/1sVls2FTGW0wuMO9AQ6pC7L5GElW7ouZJ/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-19"
+        }
+      ],
+      "Sem-2": [],
+      "Sem-3": [],
+      "Sem-4": [],
+      "Sem-5": [],
+      "Sem-6": []
+    },
+    "Botany": {
+      "Sem-1": [
+        {
+          "title": "Botany 1st Sem",
+          "url": "https://drive.google.com/file/d/1VMTL67giId4Y5FOcYNSyIi_uAptBv9lX/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2025-01-29"
+        },
+        {
+          "title": "1st Sem Botany Major Minor",
+          "url": "https://drive.google.com/file/d/1-SnYqrkZl03ddZssA6Slm4vuaRdE-ins/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-23"
+        }
+      ],
+      "Sem-2": [],
+      "Sem-3": [],
+      "Sem-4": [
+        {
+          "title": "botany 4th sem",
+          "url": "https://drive.google.com/file/d/1oSzUs8igH4akwLcIjT1-dyTy3AeD3vDJ/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-18"
+        }
+      ],
+      "Sem-5": [],
+      "Sem-6": []
+    },
+    "Physics": {
+      "Sem-1": [],
+      "Sem-2": [
+        {
+          "title": "Physics 2nd Sem",
+          "url": "https://drive.google.com/file/d/10UC3NyLGZ7UYlSpkFq0x_L407cKsiB0D/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-23"
+        }
+      ],
+      "Sem-3": [
+        {
+          "title": "3rd Sem Physics Final (1)",
+          "url": "https://drive.google.com/file/d/1GrQCdCfrVnD5Xoo4e5kbXmkWBXdBTQXM/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-12-25"
+        }
+      ],
+      "Sem-4": [],
+      "Sem-5": [
+        {
+          "title": "Mordern Physics-1",
+          "url": "https://drive.google.com/file/d/1GprFtXinTLzFBSSK4PpJRdqBkjUuFElb/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-12-25"
+        }
+      ],
+      "Sem-6": [
+        {
+          "title": "Unit-1 Solid State Physics",
+          "url": "https://drive.google.com/file/d/1GreUdnPtkYSIuENI9gzkxM0IdhcijPwi/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-12-25"
+        }
+      ]
+    },
+    "Chemistry": {
+      "Sem-1": [],
+      "Sem-2": [
+        {
+          "title": "Thermodynamics clg",
+          "url": "https://drive.google.com/file/d/1kv5ndnXNitkALV9DL5YqjoUwopGkQMHG/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-16"
+        },
+        {
+          "title": "S block elements",
+          "url": "https://drive.google.com/file/d/1kjWeVfjK8NfyNgRcQH80QDLyO3ht494Y/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-16"
+        }
+      ],
+      "Sem-3": [],
+      "Sem-4": [],
+      "Sem-5": [],
+      "Sem-6": [
+        {
+          "title": "DOC-20241013-WA0001.",
+          "url": "https://drive.google.com/file/d/1lKnOG_TeqV9_QkQ-KgxcBESUzRUZrBXY/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-10-18"
+        }
+      ]
+    },
+    "Physical education": {
+      "Sem-1": [],
+      "Sem-2": [],
+      "Sem-3": [],
+      "Sem-4": [],
+      "Sem-5": [],
+      "Sem-6": []
+    },
+    "Bioinformatics": {
+      "Sem-1": [
+        {
+          "title": "Unit 1 Nucleic acid and Proteins",
+          "url": "https://docs.google.com/document/d/1mbycdBBcbGKiMqbuzwAxzdsZKmZnlz_-/edit?usp=drivesdk&ouid=109015627030230895098&rtpof=true&sd=true",
+          "type": "pdf",
+          "lastUpdated": "2025-11-22"
+        },
+        {
+          "title": "Unit 2 Concepts of Bioinformatics",
+          "url": "https://docs.google.com/document/d/1mdVCx9hyNpaf2bhYpqIlvlik3IwMltKo/edit?usp=drivesdk&ouid=109015627030230895098&rtpof=true&sd=true",
+          "type": "link",
+          "lastUpdated": "2025-03-22"
+        },
+        {
+          "title": "Unit 3 Computation and Statistics",
+          "url": "https://docs.google.com/document/d/1mlCF1R2isoFkyyB53UDH27uR3I8fxb5D/edit?usp=drivesdk&ouid=109015627030230895098&rtpof=true&sd=true",
+          "type": "link",
+          "lastUpdated": "2025-03-21"
+        },
+        {
+          "title": "Applications of Bioinformatics in Plant Science",
+          "url": "https://docs.google.com/document/d/1mpNDbdNexgQyA0-X8hm65fdgkQ6OXVt2/edit?usp=drivesdk&ouid=109015627030230895098&rtpof=true&sd=true",
+          "type": "link",
+          "lastUpdated": "2024-08-17"
+        },
+        {
+          "title": "Applications of Bioinformatics in Medical Science",
+          "url": "https://docs.google.com/document/d/1mvXdLDd_DnQLJWJrmfFgzme8cZN6cecC/edit?usp=drivesdk&ouid=109015627030230895098&rtpof=true&sd=true",
+          "type": "link",
+          "lastUpdated": "2024-08-17"
+        }
+      ],
+      "Sem-2": [
+        {
+          "title": "Bioinformatics2ndsem2ndunit",
+          "url": "https://drive.google.com/file/d/1fPw_5zRjqdivTgUXl8GTklGX23U-_Gsr/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-09-04"
+        },
+        {
+          "title": "BLAST-ppt",
+          "url": "https://drive.google.com/file/d/1wtFPq6vrpXLj8oDKkKsuGh7mQ0HwyV65/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-20"
+        },
+        {
+          "title": "biological databases",
+          "url": "https://docs.google.com/document/d/1wtCMdbkdnXYIfuCwXCf3KJ3kNxH0PkPI/edit?usp=drivesdk&ouid=109015627030230895098&rtpof=true&sd=true",
+          "type": "link",
+          "lastUpdated": "2024-08-20"
+        },
+        {
+          "title": "Sequence alignment",
+          "url": "https://docs.google.com/document/d/1ws7LU1f2ZXTJvXpd5ITH230l0agLqVf4/edit?usp=drivesdk&ouid=109015627030230895098&rtpof=true&sd=true",
+          "type": "link",
+          "lastUpdated": "2024-08-20"
+        },
+        {
+          "title": "Bioinformatics1chapter1sem",
+          "url": "https://drive.google.com/file/d/1jE6CJPueoDRxhYsFbfIC6fe5gyt7NXUX/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-16"
+        },
+        {
+          "title": "Bioinformatics(assignment)2nd",
+          "url": "https://drive.google.com/file/d/1YogDmbJCodTFUIpLItLUXMNLqS9i9tbQ/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-13"
+        },
+        {
+          "title": "bioinformatics sem2",
+          "url": "https://drive.google.com/file/d/1ZTKHcC5HrW2GlJrQq4g4mKHZXHJe4Zp0/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-13"
+        }
+      ],
+      "Sem-3": [],
+      "Sem-4": [],
+      "Sem-5": [],
+      "Sem-6": []
+    },
+    "BioChemistry": {
+      "Sem-1": [
+        {
+          "title": "showOrder (51)",
+          "url": "https://drive.google.com/file/d/14LvnGF6oxipG7IYgLaAGI45DPfJ9hGWJ/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-12-29"
+        },
+        {
+          "title": "Biomolecule 3-1",
+          "url": "https://drive.google.com/file/d/1BFw2ia_lQtDGjxmKDhTVLLh1_dXG-5Uh/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-10-18"
+        }
+      ],
+      "Sem-2": [
+        {
+          "title": "Biochemistry 2nd sem",
+          "url": "https://drive.google.com/file/d/1s0KH6PqjZrK6cwVHo8101y0cdM1a4Is8/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2025-09-04"
+        },
+        {
+          "title": "Clinical Biochemistry",
+          "url": "https://drive.google.com/drive/folders/1o0bbyWzA0CDgwzalw3oLv3aF_xczi2G0",
+          "type": "folder",
+          "lastUpdated": "2024-08-18"
+        },
+        {
+          "title": "cell organellsandmembrane",
+          "url": "https://drive.google.com/file/d/1dsA0SVxUkqerzFlelNyMde7AOmwbC1B1/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-14"
+        }
+      ],
+      "Sem-3": [],
+      "Sem-4": [],
+      "Sem-5": [],
+      "Sem-6": []
+    },
+    "IT": {
+      "Sem-1": [
+        {
+          "title": "IMG_20250319_214706",
+          "url": "https://drive.google.com/file/d/12zUzaJ7GulTrRIics9R0Xbq6VtY2iJ5D/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2025-03-19"
+        },
+        {
+          "title": "OLevel_2_B4_CLang_26Mar_SS",
+          "url": "https://drive.google.com/file/d/1bbY3vsPbailJrTcB_aKWvLwBP1aQaYBa/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-11-15"
+        }
+      ],
+      "Sem-2": [
+        {
+          "title": "C_programming_notes",
+          "url": "https://drive.google.com/file/d/1Gotrcxew_HaTdqOG6K1dKkeGf13IFOXP/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-31"
+        }
+      ],
+      "Sem-3": [
+        {
+          "title": "Digitaland_Digitalandtechsolutions",
+          "url": "https://drive.google.com/file/d/1Fddx9CcTLUJlaZlxlhkpkjbtQ6Uuirj0/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-11-14"
+        }
+      ],
+      "Sem-4": [],
+      "Sem-5": [],
+      "Sem-6": []
+    },
+    "IT - DTS": {
+      "Sem-1": [],
+      "Sem-2": [
+        {
+          "title": "2nd sem DTS _240315_185049",
+          "url": "https://drive.google.com/file/d/1sJ8WpcGF72J6SjqtwOhyG3qnpKmT4HaM/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-19"
+        }
+      ],
+      "Sem-3": [
+        {
+          "title": "Digital Technology (Value Added) 1st to 3rd Semester by Danish Razaq Lone",
+          "url": "https://drive.google.com/file/d/1YI_0buzNmGOYocsr3_iSBPvgDCLHZ7g6/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-13"
+        }
+      ]
+    },
+    "Math": {
+      "Sem-1": [],
+      "Sem-2": [],
+      "Sem-3": [],
+      "Sem-4": [],
+      "Sem-5": [],
+      "Sem-6": [
+        {
+          "title": "linear Algebra Unit 2",
+          "url": "https://drive.google.com/file/d/1GrlPev1Fgazw-Tej-H-5M6PuGieScER0/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-12-25"
+        },
+        {
+          "title": "linear Algebra Unit 1",
+          "url": "https://drive.google.com/file/d/1GriE__7noTOHRUUL8RoKyT4PBnlIV8I6/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-12-25"
+        }
+      ]
+    },
+    "Health and wellness": {
+      "Sem-1": [],
+      "Sem-2": [],
+      "Sem-3": [],
+      "Sem-4": [],
+      "Sem-5": [],
+      "Sem-6": []
+    },
+    "Political science": {
+      "Sem-1": [
+        {
+          "title": "1st_Sem_Political_Science_Notes_Cluster_University_Srinagar_By_Danish",
+          "url": "https://drive.google.com/file/d/1-zVR4N92vmpVivqlGUn4HBFRhPwr2oeR/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-23"
+        }
+      ],
+      "Sem-2": [],
+      "Sem-3": [
+        {
+          "title": "Political Science 3rd Sem Notes Major Minor",
+          "url": "https://drive.google.com/file/d/10-xbjQDMMVEiIhHcSlXoQT6-A3yTFXy9/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-23"
+        }
+      ],
+      "Sem-4": [],
+      "Sem-5": [],
+      "Sem-6": []
+    },
+    "Geology": {
+      "Sem-1": [],
+      "Sem-2": [],
+      "Sem-3": [],
+      "Sem-4": [],
+      "Sem-5": [],
+      "Sem-6": []
+    },
+    "EVS": {
+      "Sem-1": [],
+      "Sem-2": [],
+      "Sem-3": [],
+      "Sem-4": [],
+      "Sem-5": [],
+      "Sem-6": []
+    },
+    "EVS - VAC": {
+      "Sem-1": [],
+      "Sem-2": [
+        {
+          "title": "2nd sem Environmental _240810_125900 (1)",
+          "url": "https://drive.google.com/file/d/1sNY3L1LcB4e6CzTF4cXD1I9sbYKlzaiP/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-19"
+        },
+        {
+          "title": "2nd sem environment _240315_185119 (1)",
+          "url": "https://drive.google.com/file/d/1qcsRk4X2MLhTLWgqXmmGhcrx-Y_hx2D5/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-18"
+        },
+        {
+          "title": "2nd sem Environmental Studies_240702_215453 (1)",
+          "url": "https://drive.google.com/file/d/1qZdm_u2ebPfD3HFmkrlGH6WjPj2Uqy1A/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-18"
+        },
+        {
+          "title": "evs second sem (2)",
+          "url": "https://drive.google.com/file/d/1ZKPH1OPdXLHAbZG7e9AYjWO9HPinNPsQ/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-13"
+        }
+      ],
+      "Sem-3": []
+    },
+    "Zoology": {
+      "Sem-1": [
+        {
+          "title": "Genetics",
+          "url": "https://drive.google.com/drive/folders/1nZLSgQN5dYCEL-UdZUTCmYT5Vu93Gi7r",
+          "type": "folder",
+          "lastUpdated": "2024-08-17"
+        }
+      ],
+      "Sem-2": [
+        {
+          "title": "Genetics",
+          "url": "https://drive.google.com/drive/folders/1nZyNA-_MBUtze_9VuGWQlc5R26P3FNjR",
+          "type": "folder",
+          "lastUpdated": "2024-08-17"
+        }
+      ],
+      "Sem-3": [],
+      "Sem-4": [],
+      "Sem-5": [],
+      "Sem-6": []
+    },
+    "Biotechnology": {
+      "Sem-1": [
+        {
+          "title": "Lipids-Sem I",
+          "url": "https://drive.google.com/file/d/1mam9IFofjaDuwLR8GYwAShl2MwB7VakQ/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-17"
+        },
+        {
+          "title": "carbohydrates Notes",
+          "url": "https://drive.google.com/file/d/1mTyJLSmCow_Od2aGfErf3_wSxCDkwrZQ/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-17"
+        },
+        {
+          "title": "Amino acids and proteins",
+          "url": "https://drive.google.com/file/d/1mSoV7muDhUspkwrvePA-WclnFcmlJ0K0/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-17"
+        }
+      ],
+      "Sem-2": [
+        {
+          "title": "(BIOS instant notes) Peter M Lydyard_ A Whelan_ Michael W Fanger - Immunology-Garland Science, Taylor & Francis (2011) (1)",
+          "url": "https://drive.google.com/file/d/1kzVp6yHo5G-RwGHwJL_Rv8aLF_znYEDU/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-16"
+        },
+        {
+          "title": "microbiology (biotech) 2ndsem",
+          "url": "https://drive.google.com/file/d/1b0EFsZFLCdsc3XqyK0hN3fCkYI5fYeP0/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-13"
+        },
+        {
+          "title": "thecomplimentsystem",
+          "url": "https://drive.google.com/file/d/1av9MwdWuv54bXKK0lGbhy_jz-PUFDTH_/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-13"
+        },
+        {
+          "title": "immunology(biotech) 2nd sem",
+          "url": "https://drive.google.com/file/d/1av0-sQG9LCiaZD9xlNOeyzaEf1V97N43/view?usp=drivesdk",
+          "type": "pdf",
+          "lastUpdated": "2024-08-13"
+        }
+      ],
+      "Sem-3": [],
+      "Sem-4": [],
+      "Sem-5": [],
+      "Sem-6": []
+    }
+  }
+}

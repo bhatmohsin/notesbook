@@ -1,4 +1,6 @@
 [build]
+  command = "npm install && npm run generate:notes && npm run generate:papers"
+  publish = "."
   functions = "netlify/functions"
 
 [[plugins]]
