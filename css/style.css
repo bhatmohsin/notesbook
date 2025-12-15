@@ -630,14 +630,15 @@ footer {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 250px;
+    width: 50%;
     height: 100vh;
-    background-color: var(--white);
+    background-color: var(--main-color);
     flex-direction: column;
     align-items: flex-start;
     padding-top: 80px;
     transition: right 0.3s ease;
     box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    z-index: 999;
   }
 
   .navbar .menu.active {
@@ -649,18 +650,36 @@ footer {
   }
 
   .navbar .menu .nav-link {
-    color: var(--text-dark);
+    color: var(--white);
   }
   
   .navbar .menu .nav-link:hover,
   .navbar .menu .nav-link.active {
-      color: var(--main-color);
+      color: var(--accent-color);
   }
 
   .menu-btn {
     display: block;
-    color: var(--white);
+    color: var(--text-dark);
+    z-index: 1001;
+    position: relative;
   }
+  
+  /* Ensure button is white when menu is open (assuming it overlaps) */
+  .navbar .menu.active ~ .menu-btn, /* This selector might not work if structure is different */
+  .menu-btn.active { /* If we toggle a class on the button too */
+      color: var(--white);
+  }
+  
+  /* Since we can't easily target the button based on menu state with CSS alone if they are siblings and menu comes first... 
+     Actually in HTML: .links (contains menu) comes BEFORE .menu-btn. 
+     So we can't use ~ to style .menu-btn based on .menu.active inside .links.
+     
+     However, usually the JS toggles 'active' on the menu. 
+     We might need to ensure the button is visible. 
+     If the menu background is violet, and button is dark, it might be hard to see? No, dark on violet is okay-ish, but white is better.
+     But if the button was disappearing, it was likely z-index.
+  */
 
   .header-social {
       display: none;
@@ -690,8 +709,9 @@ footer {
 
 @media (max-width: 767px) {
   .pricing-item, .service-item {
-    flex: 0 0 100%;
-    max-width: 100%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 5px; /* Reduce padding to fit better */
   }
   
   .home-text h1 {

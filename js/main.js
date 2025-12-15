@@ -29,6 +29,7 @@ window.addEventListener("scroll", () => {
 if (navToggle) {
     navToggle.addEventListener("click", () => {
         navMenu.classList.toggle("active");
+        navToggle.classList.toggle("active");
         // Ensure navbar is visible when menu is open
         navbar.classList.remove("hide");
     });
@@ -37,6 +38,7 @@ if (navToggle) {
 /*===== Close Menu on Link Click =====*/
 function linkAction() {
     navMenu.classList.remove("active");
+    if (navToggle) navToggle.classList.remove("active");
 }
 navLinks.forEach(n => n.addEventListener("click", linkAction));
 
